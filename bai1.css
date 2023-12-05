@@ -1,0 +1,17 @@
+h3{
+    font-size: 16pt;
+color:#FF0000 ;
+}
+h1{
+    background-color:yellow ;
+    text-align: center;
+}
+ol{
+    border-style:dashed ;
+    border-width: 4px;
+    border-color: blue;
+}
+body{
+    color:#FFFFFF;
+    background-color:  #009294;
+}
