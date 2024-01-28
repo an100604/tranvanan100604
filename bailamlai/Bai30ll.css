@@ -32,7 +32,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
+    /* font-size: 20px; */
     /* font-weight: bold; */
     /* text-align: center; */
     font-family: Arial, sans-serif;
@@ -64,7 +64,7 @@ nav a:hover {
     /* left: 50%; */
     transform: translate(-50%);
     color: rgb(0, 0, 0);
-    font-size: 40px;
+    /* font-size: 40px; */
     /* font-weight: bold; */
     /* text-align: center; */
     font-family: Arial, sans-serif;
@@ -98,7 +98,7 @@ nav a:hover {
     left: 80%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 30px;
+    /* font-size: 30px; */
     font-weight: bold;
     text-align: center;
     z-index: 1; /* Đặt chữ lên trên layer */
@@ -134,7 +134,7 @@ nav a:hover {
     left: 10%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 60px;
+    /* font-size: 60px; */
     font-weight: bold;
     text-align: center;
     z-index: 1; /* Đặt chữ lên trên layer */
