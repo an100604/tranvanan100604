@@ -1,144 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Web cá nhân</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-</head>
-<body class="w3-black">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai60.css">
+    <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+    <script src="bai60.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="header">
+            <div class="nutan">
+                <a href="#hop1" class="active">
+                    <i class="icon fas fa-home" aria-hidden="true"></i>
+                    <p>HOME</p>  
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#about1" class="active">
+                    <i class="icon fas fa-binoculars" aria-hidden="true"></i>
+                    <p>ABOUT</p>
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#skill" class="active">
+                    <i class="icon far fa-lightbulb" aria-hidden="true"></i>
+                    <p>SKILLS</p>
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#photo" class="active">
+                    <i class="icon fas fa-camera-retro" aria-hidden="true"></i>
+                    <p>PHOTOS</p>
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#interest" class="active">
+                    <i class="icon fas fa-eye" aria-hidden="true"></i>
+                    <p>TESTIMONIALS</p>
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#work" class="active">
+                    <i class="icon fas fa-user-tie" aria-hidden="true"></i>
+                    <p>MY WORKS</p>
+                </a>
+            </div>
+            <div class="nutan">
+                <a href="#contact1" class="active">
+                    <i class="icon fas fa-hat-cowboy" aria-hidden="true"></i>
+                    <p>CONTACT</p>
+                </a>
+            </div>
+        </div>   
+    </header>
+    <div class="box1" id="hop1">
+        <!-- TRANG 1 -->
+        <div class="Home" id="home1">
+                <h1 class="content"><span class="content1">HI, I AM</span>AN  <i class="fas fa-graduation-cap" aria-hidden="true"></i></h1>
+                <img src="daidien.jpg" alt="boy" class="anh" width="90%" >
+        </div>
+        <!-- TRANG 2 -->
+        <div class="About" id="about1">
+            <h2 class="myname">MY NAME</h2>
+            <p><i class="fas fa-id-card-alt" aria-hidden="true"></i> Họ & Tên : TRẦN VĂN AN</p>
+            <p><i class="fas fa-child" aria-hidden="true"></i> Ngày Sinh : 10 / 06 / 2004</p>
+            <p><i class="fas fa-house-user" aria-hidden="true"></i> Quê Quán : DU NỘI - MAI LÂM - ĐÔNG ANH - HÀ NỘI</p>
+            <p><i class="fas fa-icons" aria-hidden="true"></i> Sở Thích : BÓNG ĐÁ , NGHE NHẠC</p>
+            <p><div class="chuvanban">Xin chào! Tôi là một sinh viên năm 2 chuyên ngành Công nghệ Thông tin tại Đại học Thủ Đô Hà Nội. Tôi đã trải qua một hành trình học tập đầy thách thức và hứng khởi trong lĩnh vực công nghệ.
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <!-- <i class="fa fa-home w3-xxlarge"></i> -->
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-user w3-xxlarge"></i> -->
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-envelope w3-xxlarge"></i> -->
-    <p>MY WORKS</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">MY WORKS</a>
-  </div>
-</div> -->
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">LẠI LÀ </span> AN ĐÂY.</h1>
-    <img src="anhfb.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Tôi là một sinh viên năm 2 khoa Công nghệ thông tin tại Đại học Thủ Đô Hà Nội. Tôi sinh ra và lớn lên tại thành phố Hà Nội.
-
-        Tôi rất thích học hỏi và khám phá những điều mới mẻ về công nghệ. Tôi cũng có tư duy logic và sáng tạo, giúp tôi giải quyết các vấn đề và tạo ra các sản phẩm mới.
-        
-        Tôi là một người hòa đồng và dễ gần. Tôi thích tham gia các hoạt động ngoại khóa để giao lưu và học hỏi thêm từ những người khác.
-        
-        Ước mơ của tôi là trở thành một lập trình viên giỏi và có thể tạo ra những sản phẩm công nghệ hữu ích cho xã hội.
-    </p>
-</div>
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="pexels-photo-11578092.jpg" style="width:100%">
-        <img src="anhtoi.png" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+                Sự nghiệp học vụ của tôi không chỉ là những giờ học trong lớp, mà còn là sự hòa mình vào thế giới phức tạp và đầy sáng tạo của Công nghệ Thông tin. Tôi đam mê khám phá những xu hướng mới, tìm hiểu về các công nghệ mới nhất và áp dụng chúng vào những dự án thực tế.
+                    
+                Tôi có niềm đam mê với lập trình, với khả năng giải quyết vấn đề và sáng tạo. Trong suốt quãng thời gian học tập, tôi đã tích lũy được kiến thức sâu rộng về các ngôn ngữ lập trình, cũng như kỹ năng làm việc nhóm và quản lý dự án.
+                    
+                Ngoài ra, tôi là người hòa đồng, sẵn sàng học hỏi từ mọi người xung quanh và tham gia vào các hoạt động cộng đồng trong lĩnh vực Công nghệ Thông tin. Điều này giúp tôi không chỉ làm giàu kiến thức mà còn xây dựng mối quan hệ chặt chẽ với cộng đồng sinh viên và giảng viên.
+                    
+                Ước mơ của tôi là trở thành một chuyên gia Công nghệ Thông tin xuất sắc, đóng góp vào sự phát triển của ngành công nghiệp và tạo ra những giải pháp sáng tạo giúp cải thiện cuộc sống của mọi người.
+                    
+                Cảm ơn bạn đã dành thời gian đọc về hành trình học tập và sự nhiệt huyết của tôi trong lĩnh vực Công nghệ Thông tin.                    
+            </p></div>
+        </div>
+        <!-- TRANG 3 -->
+        <div class="skills-container" id="skill">
+            <h2 class="skill2">SKILLS</h2>
+            <div class="skill hvr-float-shadow">
+              <div class="skill-name">CSS</div>
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 40;"></div>
+              </div>
+              <div class="percent">40%</div>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <div class="skill-name">HTML</div>
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-bar">
+                <div class="skill-progress1" style="width: 50;"></div>
+              </div>
+              <div class="percent">50%</div>
+            </div>
+            <div class="skill hvr-float-shadow">
+                <div class="skill-name">JAVASCRIPT</div>
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <div class="skill-bar">
+                  <div class="skill-progress2" style="width: 40;"></div>
+                </div>
+                <div class="percent">40%</div>
+            </div>
+            <div class="skill hvr-float-shadow">
+                <div class="skill-name">ACCESS</div>
+                <div class="skill-icon"><i class="fas fa-universal-access"></i></div>
+                <div class="skill-bar">
+                  <div class="skill-progress3" style="width: 40;"></div>
+                </div>
+                <div class="percent">40%</div>
+            </div>
+        </div>
+        <!-- TRANG 4 -->
+        <div class="custom" id="photo">
+            <h2>PHOTOS</h2>
+            <div class="custom1">
+                <div class="custom2">
+                    <img src="doibong.jpg" alt="Image 1">
+                </div>
+    
+                <div class="custom2">
+                    <img src="dichoi.jpg" alt="Image 2">
+                </div>
+            </div>
+        </div>
+        <!-- TRANG 5 -->
+        <div class="interest" id="interest">
+            <h2 class="interest1">TESTIMONIALS</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="fback.jpg" alt="">
+                    <blockquote>
+                        "An là một cá nhân rất tận tụy và có tầm nhìn lớn. Sự sáng tạo và lòng nhiệt huyết của An luôn là nguồn động viên cho mọi người xung quanh."
+                        <p>- PHANH -</p>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <img src="dog.jpg" alt="">
+                    <blockquote>
+                        "Khả năng giao tiếp xuất sắc và sự trách nhiệm cao đã giúp An tạo ra những ấn tượng tích cực trong cộng đồng. Với sự thông minh và sự chăm chỉ, An không chỉ là một người bạn đồng hành đáng tin cậy mà còn là nguồn động viên lớn cho mọi dự án."
+                        <p>- HUNG -</p>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <img src="dog2.jpg" alt="">
+                    <blockquote>
+                        "An không chỉ nổi bật với sự thông thái và sự hiểu biết sâu rộng về nhiều lĩnh vực, mà còn là người có tâm huyết và lòng đam mê cao. Sự hòa đồng và sẵn sàng hỗ trợ người khác đã tạo ra một môi trường tích cực xung quanh An."
+                        <p>- QUANG -</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <!-- TRANG 6 -->
+        <div class="myworks" id="work">
+            <h2>MY WORKS</h2>
+        </div>
+        <div class="works-container">
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 1">
+              <div class="overlay">
+                <p>BUỔI 1</p>
+                <li class="menuitem"><a href="./buoi1/BT1b1.html">bài 1 </a></li> 
+                <li class="menuitem"><a href="./buoi1/BT2ab1.html">bài 2a </a></li>
+                <li class="menuitem"><a href="./buoi1/BT2bb1.html">bài 2b</a></li>
+                <li class="menuitem"><a href="./buoi1/BT2cb1.html">bài 2c </a></li>
+                <li class="menuitem"><a href="./buoi1/BT3b1.html">bài 3 </a></li>  
+                <li class="menuitem"><a href="./buoi1/BT4b1.html">bài 4 </a></li>  
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 2</p>
+                <li class="menuitem"><a href="./buoi2/bai1.html">bài 1 </a></li> 
+                <li class="menuitem"><a href="./buoi2/bai2a.html">bài 2a </a></li>
+                <li class="menuitem"><a href="./buoi2/bai2b.html">bài 2b</a></li>
+                <li class="menuitem"><a href="./buoi2/bai3.html">bài 3 </a></li>
+                <li class="menuitem"><a href="./buoi2/bai4.html">bài 4 </a></li>
+                <li class="menuitem"><a href="./buoi2/bai5.html">bài 5 </a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 3</p>
+                <li class="menuitem"><a href="./Buoi3/mau.html">bài 1 </a></li> 
+                <li class="menuitem"><a href="./Buoi3/Baomang.html">bài 2 </a></li>
+                <li class="menuitem"><a href="./Buoi3/baomoi.html">bài 3</a></li>
+                <li class="menuitem"><a href="./Buoi3/material.html">bài 4</a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 4</p>
+                <li class="menuitem"><a href="./buoi4/bai1buoi4.html">bài 1 </a></li> 
+                <li class="menuitem"><a href="./buoi4/bai3buoi4.html">bài 3 </a></li>
+                <li class="menuitem"><a href="./buoi4/bai4buoi4.html">bài 4</a></li>
+                <li class="menuitem"><a href="./buoi4/bai5buoi4.html">bài 5</a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 5</p>
+                <li class="menuitem"><a href="./buoi5/bai1cach1.html">bài 1.1 </a></li> 
+                <li class="menuitem"><a href="./buoi5/bai1cach2.html">bài 1.2 </a></li>
+                <li class="menuitem"><a href="./buoi5/bai2.html">bài 2</a></li>
+                <li class="menuitem"><a href="./buoi5/bai3.html">bài 3</a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 6</p>
+                <li class="menuitem"><a href="./buoi6/bai4buoi6.html">bài 4 </a></li> 
+                <li class="menuitem"><a href="./buoi6/bai5buoi6.html">bài 5 </a></li>
+                <li class="menuitem"><a href="./buoi6/bai6.1.html">bài 6.1</a></li>
+                <li class="menuitem"><a href="./buoi6/bai6.2.html">bài 6.2</a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BUỔI 7</p>
+                <li class="menuitem"><a href="./buoi7/b7buoi7.html">bài 7 </a></li> 
+                <li class="menuitem"><a href="./buoi7/vidu.html">Ví dụ 1 </a></li>
+                <li class="menuitem"><a href="./buoi7/vidu1.html">Ví dụ 2</a></li>
+              </div>
+            </div>
+            <div class="work-item">
+              <img src="bongda1.jpg" alt="Work 2">
+              <div class="overlay">
+                <p>BÀI 30</p>
+                <li class="menuitem"><a href="./baigiuaki/baigiuaki.html">bài 30% </a></li> 
+              </div>
+            </div>
+          </div>
+          
+        <!-- TRANG 7 -->
+        <footer>
+            <div class="tong" id="contact1">
+              <div class="contact">
+                <div class="in4">
+                  <h3>Contact Us:</h3>
+                  <p>Email: antranvan26@gmail.com</p>
+                  <p>Phone: 0375002376</p>
+                </div>
+              </div>
+              <div class="chufooter">
+                <p>&copy;2024 My Website By Tran Van An</p>
+              </div>
+              <div class="bieutuong">
+                <a href="https://www.facebook.com/antranvann1006"><i class="bieutuong1 fab fa-facebook-f" style="font-size: 30px;" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/trvann.1o6/"><i class="bieutuong1 fa fa-instagram" style="font-size: 30px;" aria-hidden="true"></i></a>
+              </div>
+            </div>
+        </footer>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">My Works</h2>
-    <hr style="width:200px" class="w3-opacity">
-     <h2>BUỔI 1</h2>
-     <li class="menuitem"><a href="./buoi1/BT1b1.html">bài 1 </a></li> 
-     <li class="menuitem"><a href="./buoi1/BT2ab1.html">bài 2a </a></li>
-     <li class="menuitem"><a href="./buoi1/BT2bb1.html">bài 2b</a></li>
-     <li class="menuitem"><a href="./buoi1/BT2cb1.html">bài 2c </a></li>
-     <li class="menuitem"><a href="./buoi1/BT3b1.html">bài 3 </a></li>  
-     <li class="menuitem"><a href="./buoi1/BT4b1.html">bài 4 </a></li>      
-     <h2>BUỔI 2</h2>  
-     <li class="menuitem"><a href="./buoi2/bai1.html">bài 1 </a></li> 
-     <li class="menuitem"><a href="./buoi2/bai2a.html">bài 2a </a></li>
-     <li class="menuitem"><a href="./buoi2/bai2b.html">bài 2b</a></li>
-     <li class="menuitem"><a href="./buoi2/bai3.html">bài 3 </a></li>
-     <li class="menuitem"><a href="./buoi2/bai4.html">bài 4 </a></li>
-     <li class="menuitem"><a href="./buoi2/bai5.html">bài 5 </a></li>
-     <h2>BUỔI 3</h2>  
-     <li class="menuitem"><a href="./Buoi3/mau.html">bài 1 </a></li> 
-     <li class="menuitem"><a href="./Buoi3/Baomang.html">bài 2 </a></li>
-     <li class="menuitem"><a href="./Buoi3/baomoi.html">bài 3</a></li>
-     <li class="menuitem"><a href="./Buoi3/material.html">bài 4</a></li>
-     <h2>BÀI 30%</h2>
-     <li class="menuitem"><a href="./baigiuaki/baigiuaki.html">bài 30% </a></li> 
-     <h2>BUỔI 4</h2>  
-     <li class="menuitem"><a href="./buoi4/bai1buoi4.html">bài 1 </a></li> 
-     <li class="menuitem"><a href="./buoi4/bai3buoi4.html">bài 3 </a></li>
-     <li class="menuitem"><a href="./buoi4/bai4buoi4.html">bài 4</a></li>
-     <li class="menuitem"><a href="./buoi4/bai5buoi4.html">bài 5</a></li>
-     <h2>BUỔI 5</h2>  
-     <li class="menuitem"><a href="./buoi5/bai1cach1.html">bài 1.1 </a></li> 
-     <li class="menuitem"><a href="./buoi5/bai1cach2.html">bài 1.2 </a></li>
-     <li class="menuitem"><a href="./buoi5/bai2.html">bài 2</a></li>
-     <li class="menuitem"><a href="./buoi5/bai3.html">bài 3</a></li>
-     <h2>BUỔI 6</h2>  
-     <a href="./buoi6/bai4buoi6.html">bài 4 </a></li> 
-     <a href="./buoi6/bai5buoi6.html">bài 5 </a></li>
-     <a href="./buoi6/bai6.1.html">bài 6.1</a></li>
-     <a href="./buoi6/bai6.2.html">bài 6.2</a></li>
-     <h2>BAI 30 MOI </h2>  
-     <a href="./bailamlai/bai30ll.html">BAI 30% MOI SUA</a></li> 
-     <h2>BUỔI 7</h2>  
-     <a href="./buoi7/b7buoi7.html">bài 7 </a></li> 
-     <a href="./buoi7/vidu.html">Ví dụ 1 </a></li>
-     <a href="./buoi7/vidu1.html">Ví dụ 2</a></li>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-<!-- END PAGE CONTENT -->
-</div>
-
 </body>
 </html>

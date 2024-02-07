@@ -18,7 +18,9 @@
 .h2 {
     font-family: "Montserrat", sans-serif;
 }
-
+/* .active p{
+    font-size: 80%;
+} */
 
 .header {
     width: 6%;
@@ -33,12 +35,9 @@
     position: fixed;
     padding: 10px;
 }
-.home{
-
-}
 .box1 {
-    width: 95%;
-    background-color: black;
+    /* width: 95%; */
+    background-color: rgb(0, 0, 0);
     height: 100%;
     padding-left: 6%;
 
@@ -46,28 +45,44 @@
 
 .content {
     text-align: center;
-    color: #ffffff;
-    padding: 10px;
+    color: #f29a9a;
+    /* padding: 10px; */
 }
 
 .content1 {
     text-align: center;
-    color: #ffffff;
+    color: #f29a9a;
     padding: 10px;
 }
 .nutan {
-    color: #ffffff;
+    width: 100%;
+    /* height: 100%; */
+    color: #f29a9a;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    gap: 20px;
+    /* border: 1px solid #707070; */
+    padding: 3px;
+   
 }
-
+.active{
+    text-align: center;
+    color:#f29a9a;
+}
+.nutan p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
 .About {
     color: #ffffff;
     text-align: center;
-    padding: 80px;
+    /* padding: 80px; */
 }
 
 .sothich {
-    color: #ffffff;
+    color: #f29a9a;
     text-align: center;
     /* padding: 20px;
     margin:auto; */
@@ -87,6 +102,7 @@
 
 .demo {
     display: flex;
+    
 }
 
 .hoanghon2 {
@@ -96,25 +112,321 @@
 }
 .anh{
     padding: 60px;
+    height: 40%;
+    width: 40%;
+    transform: translate(50%, 0);
 }
 .chuvanban{
     font-family:'Times New Roman', Times, serif;
     font-size: larger;
     padding:20px;
     line-height:2 ;
+    /* color: #f29a9a; */
 }
 .myworks{
     text-align: center;
-    color: #ffffff;
+    color: #f29a9a;
     padding:30px;
 }
-.fas fa-homoe{
-    align-items: center;
+.king{
+    padding: 10px;
 }
-/* .item{
+.myname{
+    color: #f29a9a;
+    margin-top: 10%;
+}
+.chiadoi{
+    display: flex;
+}
+.chiadoi{
+    display: flex;
+}
+.anh1{
+    height: 90%;
+    width: 90%;
+}
+.About p{
+   justify-content: center;
+   padding: 10px;
+   margin-top: 1%;
+   /* font-family:'Times New Roman', Times, serif; */
+}
+.skill2{
+    color: #f29a9a; 
+    text-align: center;
+    margin-top: 20%;
+}
+.chuphoto{
+    color: #f29a9a;
+    text-align: center;
+}
+.interest1{
+    color: #f29a9a;
+    text-align: center;
+    margin-top: 10%;
+}
+.work1{
+    color: #f29a9a;
+    text-align: center;
+    margin-top: 8%;
+}
+.skills{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.testimonial-container {
+    max-width: 84%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 12%;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 8%; 
+    border-radius: 50%; 
+    margin-right: 20px;
+}
+
+.testimonial blockquote {
+    padding: 10px;
+    border-left: 2px solid #3498db;
     color:#ffffff;
+    font-family: sans-serif;
+}
+
+.testimonial blockquote p {
+    color: #ffffff;
+    font-family: sans-serif;
+    padding: 10px;
+}
+/* .footer{
+    display: flex;
+    color: #ffffff;
+    font-size: 40%;
+    background-color: #ffffff;
 } */
-/* .overlay{
-    color:#ffffff;
-    padding:40px;
-} */
+footer {
+    background-color: #767676;
+    color: #ffffff;
+    padding: 20px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 97,5%;
+  }
+
+  .tong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+
+  .in4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    margin-bottom: 10px;
+    transform: translate(19%, 0);
+  }
+
+  .chufooter {
+    margin-left: auto;
+  }
+
+  .bieutuong {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .bieutuong1 {
+    color: #ffffff;
+    padding: 15px; 
+  }
+/* PHOTO */
+
+
+.custom {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom1 {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+}
+
+.custom2 {
+    display: none;
+}
+
+.custom2 img {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -25%;
+    /* padding: 20px; */
+    /* transform: translate(-8%, 0); */
+    /* display: block;
+    margin: 0 auto; */
+}
+
+.custom h2 {
+    color: #f29a9a;
+    text-align: center;
+    margin-top: 2%;
+}
+/* WORK */
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    gap: 10px; /* Add gap between items */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 64%;
+}
+
+.work-item img {
+    width: 100%; /* Adjust width to fill the container */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width to fill the container */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    flex-direction: column;
+}
+
+.work-item:hover img {
+    transform: scale(1.1);
+}
+
+.work-item:hover .overlay {
+    opacity: 1;
+}
+.menuitem {
+    list-style-type: none; /* Remove list bullet points */
+    margin: 8px 0; /* Adjust margin for spacing between items */
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* SKILL */
+.skills-container {
+    text-align: center;
+  }
+  
+  .skill {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 50%; 
+    border-radius: 10px;
+    background-color: #f29a9a;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .skill-icon {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    width: 40%; 
+    transition: width 1s ease-in-out;
+  }
+  .skill-progress1 {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    width: 50%; 
+    transition: width 1s ease-in-out;
+  }
+  .skill-progress2 {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    width: 40%; 
+    transition: width 1s ease-in-out;
+  }
+  .skill-progress3 {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    width: 40%; 
+    transition: width 1s ease-in-out;
+  }
+  
+  .percent {
+    font-size: 20px;
+    position: absolute;
+    color: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .skill:hover .percent {
+    opacity: 1;
+  }
